@@ -9,7 +9,8 @@ const knex = require("./db");
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://waiting-list-front-tgt-test.herokuapp.com/"]
+    origin: ["https://waiting-list-front-tgt-test.herokuapp.com/"],
+    "Access-Control-Allow-Origin": true,
   },
 });
 
